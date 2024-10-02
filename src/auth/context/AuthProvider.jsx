@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }) => {
 
     const action = { type: types.logout };
 
-    dispatch(logout);
+    dispatch(action);
   }
 
   return (
