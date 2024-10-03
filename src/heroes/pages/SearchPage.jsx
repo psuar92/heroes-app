@@ -17,7 +17,7 @@ export const SearchPage = () => {
     const showError  = (q.length > 0) && heroes.length === 0;
 
     const { searchText, onInputChange } = useForm({
-        searchText: '',
+        searchText: q,
     });
 
     const onSearchSubmit = (event) => {
