@@ -9,11 +9,19 @@ const router = createBrowserRouter([
 
     {
         path: "/login",
-        element: <PublicRoute> <LoginPage /> </PublicRoute>,
+        element: (
+            <PublicRoute> 
+                <LoginPage /> 
+            </PublicRoute>
+        ),
     },
     {
         path: "/",
-        element: <PrivateRoute> <HeroesRoutes /> </PrivateRoute>,
+        element: (
+            <PrivateRoute> 
+                <HeroesRoutes /> 
+            </PrivateRoute>
+        ),
         children: ChildHeroesRoutes,
     }
 
